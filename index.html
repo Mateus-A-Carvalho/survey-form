@@ -9,47 +9,64 @@
 </head>
 <body>
 
-    <!-- Form -->
     <section class="container">
         <header class="header">
             <h1 class="title"><a href="https://github.com/Mateus-A-Carvalho">Mateus A. Carvalho</a> Survey Form.</h1>
             <p class="description">Thank you for taking the time to help me improve my knowledge.</p>
         </header>
         <hr>
+        
+        <!-- Form -->
             <form class="survey-form" id="survey-form" action="https://register-demo.freecodecamp.org" method="post" autocomplete="off">
-                <fieldset class="first-part-form">
-                    <label for="name" id="name-label"> Name<input type="text" class="name" name="name" id="name" placeholder="Enter your Name" required></label>
-                    <label for="email" id="email-label"> Email<input type="email" class="email" name="email" id="email" placeholder="Enter your Email" required></label>
-                    <label for="age" id="number-label"> Age <span class="clue">(Optional)</span><input type="number" class="age" min="18" max="80" name="age" id="number"   placeholder="Age" required></label>
-                    <label for="referrer"> Which option best describes your current role?
-                        <select name="referrer" id="dropdown">
+                
+                <!-- Fieldset: name, age and email -->
+                <fieldset class="fieldset-01">
+
+                    <label for="name" id="name-label"> Name</label>
+                    <input type="text" class="name" name="name" id="name" placeholder="Enter your Name" required>
+
+                    <label for="email" id="email-label"> Email</label>
+                    <input type="email" class="email" name="email" id="email" placeholder="Enter your Email" required>
+
+                    <label for="age" id="number-label"> Age <span class="clue">(Optional)</span></label>
+                    <input type="number" class="age" min="18" max="80" name="age" id="number" placeholder="Age" required>
+                    
+                </fieldset>
+
+                <!-- Fieldset options -->
+                <fieldset class="fieldset-02 options">
+                    <label for="dropdown-01" id="dropdown-label"> Which option best describes your current role?</label>
+                        <select name="referrer" id="dropdown-01">
                             <option value="">Select current role</option>
                             <option value="1" name="student">Student</option>
                             <option value="2" name="full-time-job">Full Time Job</option>
                             <option value="3" name="full-time-leaner">Full Time Leaner</option>
                             <option value="4" name="prefer-not-to-say">Prefer Not To Say</option>
                             <option value="5" name="other">Other</option>
-                    </label>
-                    </select>
+                        </select>
                 </fieldset>
-                <fieldset class="radio-options">
+                    
+                    <!-- Fieldset radio options -->
+                <fieldset class="fieldset-03 radio-options">
                     <label for=""> Would you recommend Mateus Carvalho for a job?
-                        <label for="radio-option-1"><input type="radio" value="radio-option-1" class="radio-option" name="radio-option" id="radio-option-1" required> Definitely</label>
+                        <label for="radio-option-1">
+                            <input type="radio" value="radio-option-1" class="radio-option" name="radio-option" id="radio-option-1" required> Definitely</label>
                         <label for="radio-option-2"><input type="radio" value="radio-option-2" class="radio-option" name="radio-option" id="radio-option-2" required> Maybe</label>
                         <label for="radio-option-3"><input type="radio" value="radio-option-3" class="radio-option" name="radio-option" id="radio-option-3" required> Not Sure</label>
                     </label>
                 </fieldset>
-                <fieldset>
-                    <label for=""> What is your favorite feature of Mateus Carvalho?
-                        <select name="" id="">
+
+                <fieldset class="fieldset-04 options">
+                    <label for="dropdown-02"> What is your favorite feature in Mateus Carvalho?</label>
+                        <select name="" id="dropdown-02">
                             <option value="">Select an option</option>
                             <option value="1">Disciplined</option>
                             <option value="2">Focused</option>
                             <option value="3">Smart</option>
                             <option value="4">Organised</option>
                         </select>
-                    </label>
                 </fieldset>
+                        
                 <fieldset>
                     <label for=""> What would you like to see he improve? <span class="clue">(Check all that apply)</span>
                         <label for="checkbox-option1"><input type="checkbox" class="checkbox-option" id="checkbox-option1" value="checkbox-option-1">Front-end Projects</label>
