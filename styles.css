@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ephesis&family=Josefin+Sans:ital,wght@1,100;1,400&family=Noto+Sans&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@500&family=Ephesis&family=Josefin+Sans:ital,wght@1,100;1,400&family=Noto+Sans&family=Playfair+Display&display=swap');
 
 * {
     margin: 0;
@@ -7,47 +7,71 @@
 }
 
 html {
-    background: url(/images/bg1.jpg) no-repeat left bottom padding-box local;
     font-size: 62.5%;
     height: 100vh;
 }   
 
 body {
     height: 100%;
-    margin: 0 auto;
-    background: linear-gradient(
-        to bottom,
-        #968c9b99,
-        #d6c8ddff
-    );
-    border-radius: 5%;
-    color: #1e212d;
-    max-width: 50%;
+    background: url(./images/bg1.jpg) left bottom padding-box no-repeat fixed ;
+    font-family: 'Playfair Display', serif;
 }
 
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+.title {
     font-size: 3.5rem;
+    font-weight: 900;
 }
 
 a {
     color: unset;
+    text-decoration: none;
 }
 
-p {
+a:hover {
+    color: #4c4a45;
+}
+
+.description {
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
 }
 
-h1, p {
+.title, 
+.description {
     margin: .3rem;
 }
 
-header {
-    margin: 0 auto;
+.header {
+    margin: 1rem auto;
     text-align: center;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
+    /* border-bottom: 2px solid #6c6a62; */
+}
+
+hr {
+    margin: 2.5rem auto;
+    width: 90%;
+    border: 3px solid #6c6a62;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50%;
+    background: linear-gradient(-130deg, 
+    rgba(150,140,155,1) 0%, 
+    rgba(204,221,200,1) 46%,
+    rgba(143,155,140,1) 100%);
+    border-radius: 2% 98% 2% 98% / 97% 2% 98% 3% ;
+    box-shadow:
+    5.6px -6.1px 1.5px rgba(0, 0, 0, 0.161),
+    11.1px -12.1px 3.7px rgba(0, 0, 0, 0.19),
+    16.3px -17.8px 6.9px rgba(0, 0, 0, 0.187),
+    21.8px -23.7px 12.3px rgba(0, 0, 0, 0.175),
+    29.1px -31.7px 23px rgba(0, 0, 0, 0.173),
+    67px -73px 55px rgba(0, 0, 0, 0.28);
 }
 
 .survey-form {
@@ -56,6 +80,7 @@ header {
     min-width: 30rem;
     padding-bottom: 2rem;
     width: 60vw;
+    font-size: 1.6rem;
 }
 
 input {
@@ -86,7 +111,6 @@ input::placeholder {
 }
 
 label {
-    /* Display: block mostra os elementos em forma de blocos. Agora, não vão fcar mais um ao lado do outro como antes. */
     display: block;
 }
 
