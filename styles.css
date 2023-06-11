@@ -88,6 +88,7 @@ hr {
 }
 
 fieldset {
+    min-width: 80%;
     display: block;
     margin: 0;
     border: none;
@@ -99,8 +100,10 @@ fieldset {
     /* box-shadow: 2px -2px 1px 1px #00000048; */
 }
 
-input {
-    width: 100%;
+.name,
+.age,
+.email {
+    min-width: 100%;
     border-radius: .5rem;
     background-color: #7D8F69;
     color: #ffffff;
@@ -132,7 +135,6 @@ label {
     display: block;
 }
 
-
 fieldset:last-of-type {
     margin-bottom: 1rem;
 }
@@ -147,9 +149,10 @@ fieldset:last-of-type {
 }
 
 textarea {
-    display: block;
+    /* display: block; */
     width: 100%;
     background-color: #E6E5A3;
+    outline: none;
 }
 
 select {
