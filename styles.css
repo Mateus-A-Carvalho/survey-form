@@ -59,7 +59,7 @@ hr {
 
 .container {
     margin: 1rem auto;
-    max-width: 50%;
+    max-width: 60%;
     background: linear-gradient(
         -130deg, 
         rgba(150,140,155,.65) 0%, 
@@ -100,7 +100,7 @@ fieldset {
 
 }
 
-legend {
+.legend {
     text-align: center;
     background-color: #455742;
     color :#D5D6C2;
@@ -154,7 +154,8 @@ fieldset:last-of-type {
     margin-bottom: 1rem;
 }
 
-.radio-option, .checkbox-option {
+.radio-option, 
+.checkbox-option {
     width: unset;
     vertical-align: center;
     margin-right: .5rem;
@@ -181,6 +182,22 @@ span {
     font-style: italic;
 }
 
-@media (max-width: 650px) {
+@media (min-width:320px) and (max-width: 425px) {
+    .container {
+        min-width: 80vw;
+    }
 
+    .survey-form {
+        min-width: 90%
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .container {
+        min-width: 80vw;
+    }
+
+    .survey-form {
+        min-width: 90%;
+    }
 }
