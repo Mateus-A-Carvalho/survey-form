@@ -34,9 +34,6 @@ a:hover {
 }
 
 .description {
-    /* font-style: italic;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem; */
     font: italic 2rem 'Playfair Display', sans-serif;
 }
 
@@ -92,11 +89,9 @@ fieldset {
     margin: 0;
     border: none;
     background-color: #7D8F6949;
-    /* border-bottom: 5px solid #7D8F69; */
     font-family: 'Playfair Display', serif ;
     border-radius: .5rem;
-    margin-bottom: .3rem;
-    /* box-shadow: 2px -2px 1px 1px #00000048; */
+    margin-bottom: .5rem;
 
 }
 
@@ -124,10 +119,8 @@ input[type="submit"] {
     text-align: center;
     vertical-align: center;
     cursor: pointer;
-    box-shadow: 2px -2px 1px 1px #00000048;
     height: 4rem;
     border-radius: 0.5rem;
-    /* background-color: rgba(204,221,200,.65); */
     background-color: #516a25;
     color: #D5D6C2;
     font-size: 2rem;
@@ -136,7 +129,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     transform: translateX(5px);
-    box-shadow: 2px -2px 1px 1px #000000ff;;
+    box-shadow: 1px -1px 1px 1px #000000ff;;
     background-color: #2b3914;
 }
 
