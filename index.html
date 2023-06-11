@@ -22,6 +22,7 @@
                 
                 <!-- Fieldset: name, age and email -->
                 <fieldset class="fieldset-01">
+                    <legend>Personal Data</legend>
 
                     <label for="name" id="name-label"> Name</label>
                     <input type="text" class="name-input" name="name" id="name" placeholder="Enter your Name" required>
@@ -36,7 +37,8 @@
 
                 <!-- Fieldset options -->
                 <fieldset class="fieldset-02 options">
-                    <label for="dropdown-01" id="dropdown-label"> Which option best describes your current role?</label>
+                    <legend>Which option best describes your current role?</legend>
+                    <!-- <label for="dropdown-01" id="dropdown-label"></label> -->
                         <select name="referrer" id="dropdown-01">
                             <option value="">Select current role</option>
                             <option value="1" name="student">Student</option>
@@ -49,16 +51,23 @@
                     
                     <!-- Fieldset radio options -->
                 <fieldset class="fieldset-03 radio-options">
-                    <label for=""> Would you recommend Mateus Carvalho for a job?
+                    <legend>Would you recommend Mateus Carvalho for a job?</legend>
+                    
                         <label for="radio-option-1">
-                            <input type="radio" value="radio-option-1" class="radio-option" name="radio-option" id="radio-option-1" required> Definitely</label>
-                        <label for="radio-option-2"><input type="radio" value="radio-option-2" class="radio-option" name="radio-option" id="radio-option-2" required> Maybe</label>
-                        <label for="radio-option-3"><input type="radio" value="radio-option-3" class="radio-option" name="radio-option" id="radio-option-3" required> Not Sure</label>
-                    </label>
+                            <input type="radio" value="radio-option-1" class="radio-option" name="radio-option" id="radio-option-1" required> Definitely
+                        </label>
+                        <label for="radio-option-2">
+                            <input type="radio" value="radio-option-2" class="radio-option" name="radio-option" id="radio-option-2" required> Maybe
+                        </label>
+                        <label for="radio-option-3">
+                            <input type="radio" value="radio-option-3" class="radio-option" name="radio-option" id="radio-option-3" required> Not Sure
+                        </label>
+                    
                 </fieldset>
 
                 <fieldset class="fieldset-04 options">
-                    <label for="dropdown-02"> What is your favorite feature in Mateus Carvalho?</label>
+                    <legend>What is your favorite feature in Mateus Carvalho?</legend>
+                    <!-- <label for="dropdown-02"> </label> -->
                         <select name="" id="dropdown-02">
                             <option value="">Select an option</option>
                             <option value="1">Disciplined</option>
@@ -69,7 +78,8 @@
                 </fieldset>
                         
                 <fieldset>
-                    <label for=""> What would you like to see he improve? <span class="clue">(Check all that apply)</span>
+                    <legend>What would you like to see he improve? <span class="clue">(Check all that apply)</span></legend>
+                    <!-- <label for="">  -->
                         <label for="checkbox-option1"><input type="checkbox" class="checkbox-option" id="checkbox-option1" value="checkbox-option-1">Front-end Projects</label>
                         <label for="checkbox-option2"><input type="checkbox" class="checkbox-option" id="checkbox-option2" value="checkbox-option-2">Back-end Projects</label>
                         <label for="checkbox-option3"><input type="checkbox" class="checkbox-option" id="checkbox-option3" value="checkbox-option-3">Data Visualization</label>
@@ -81,10 +91,12 @@
                         <label for="checkbox-option9"><input type="checkbox" class="checkbox-option" id="checkbox-option9" value="checkbox-option-9">Wiki</label>
                         <label for="checkbox-option10"><input type="checkbox" class="checkbox-option" id="checkbox-option10" value="checkbox-option-10">Forum</label>
                         <label for="checkbox-option11"><input type="checkbox" class="checkbox-option" id="checkbox-option11" value="checkbox-option-11">Additional Courses</label>
-                    </label>
+                    <!-- </label> -->
                 </fieldset>
+
                 <fieldset>
-                    <label for="">Any comments or suggestions?<textarea name="" id="" cols="30" rows="5" placeholder="Enter your feedback here..."></textarea></label>
+                    <legend>Any comments or suggestions?</legend>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Enter your feedback here..."></textarea>
                 </fieldset>
                 <input type="submit" id="submit" value="Submit">
             </form>
